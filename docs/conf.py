@@ -15,7 +15,6 @@ extensions = [
 
 # If using Markdown (.md) files
 source_suffix = {
-    ".rst": "restructuredtext",
     ".md": "markdown",
 }
 
