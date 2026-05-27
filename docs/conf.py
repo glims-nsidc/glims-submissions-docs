@@ -11,6 +11,7 @@ extensions = [
     "sphinx.ext.autodoc",       # pull docstrings from Python code
     "sphinx.ext.napoleon",      # Google/NumPy style docstrings
     "sphinx.ext.viewcode",      # links to source code
+    "myst_parser",
 ]
 
 # If using Markdown (.md) files
