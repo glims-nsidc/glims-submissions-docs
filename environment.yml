@@ -1,0 +1,7 @@
+name: glims-docs
+channels:
+  - conda-forge
+  - nodefaults
+dependencies:
+  - sphinx
+  - sphinx_rtd_theme
