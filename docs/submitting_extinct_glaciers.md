@@ -33,7 +33,7 @@ For each glacier you are reporting as extinct, you will need the following:
 
 **GLIMS Glacier ID** — The unique identifier assigned to the glacier in the GLIMS database (e.g., `G006813E46133N`). IDs follow the format `G` + 6-digit longitude + `E`/`W` + 5-digit latitude + `N`/`S`.
 
-**Estimated disappearance date** (`est_disappear_date`) — Your best estimate of when the glacier disappeared, in ISO 8601 format (`YYYY-MM-DD`). The day and month may be approximate; for example, if only the year is known, use `YYYY-01-01` and set a large uncertainty.
+**Estimated disappearance date** (`est_disappear_date`) — Your best estimate of when the glacier disappeared, in ISO 8601 format (`YYYY-MM-DD`).  The date of disappearance should be the date that the glacier was observed to be gone in the field, or the date of the image that was used to determine it was gone.
 
 **Date uncertainty** (`est_disappear_unc`) — The uncertainty in the disappearance date, expressed as an integer number of days.
 
