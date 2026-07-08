@@ -14,12 +14,11 @@ The following cases are examples and not an exhaustive list.
 * Glacier ice can no longer be seen by experts on high resolution imagery
 * The area of glacier ice is less than the threshold set by a national inventory
 
-GLIMS is primarily interested in glaciers that have disappeared within the last 50–100 years, rather than glaciers lost since the Little Ice Age. When GLIMS data are downloaded, extinct glaciers have a value of gone in the glacier_status (or glac_stat) field, enabling analysis of trends across geographic regions.
+When GLIMS data are downloaded, extinct glaciers have a value of gone in the glacier_status (or glac_stat) field, enabling analysis of trends across geographic regions.
 
 
 ## Before Submitting 
 
-The NSIDC DAAC welcomes extinct glacier submissions from the community to make glacier outline records more complete.
 First determine if the extinct glacier or glaciers is in the GLIMS Glacier Database.
 
 To determine if a glacier is in the GLIMS Glacier Database, use theGLIMS Glacier Viewer](https://www.glims.org/maps/glims) or the [GLIMS Text Search Interface](https://www.glims.org/maps/gmng).  These tools will also provide the GLIMS glacier ID for the glacier.
@@ -31,13 +30,15 @@ If you have outlines for glaciers that are not in the database, please submit th
 
 For each glacier you are reporting as extinct, you will need the following:
 
-**GLIMS Glacier ID** — The unique identifier assigned to the glacier in the GLIMS database (e.g., `G006813E46133N`). IDs follow the format `G` + 6-digit longitude + `E`/`W` + 5-digit latitude + `N`/`S`.
+**GLIMS Glacier ID** — The unique identifier assigned to the glacier in the GLIMS database (e.g., `G006813E46133N`).
 
 **Estimated disappearance date** (`est_disappear_date`) — Your best estimate of when the glacier disappeared, in ISO 8601 format (`YYYY-MM-DD`).  The date of disappearance should be the date that the glacier was observed to be gone in the field, or the date of the image that was used to determine it was gone.
 
 **Date uncertainty** (`est_disappear_unc`) — The uncertainty in the disappearance date, expressed as an integer number of days.  This uncertainty can be estimated as the number of days between the last date the glacier was observed and the **Estimated disappearance date**.  Where the date last observed can be an observation in the field or the existence of the glacier in a previous inventory.
 
 **Source** (`gone_source`) — Attribution for the disappearance determination. This should include the name of the person who made the determination, their institution, and/or a relevant publication DOI or image ID. For example: `Jane Doe (University of X), Landsat 8 image LC08_L1TP_XYZ_20200901` or `Doe et al. 2023, https://doi.org/10.xxxx/xxxxx`.
+
+**Method** (`method`) - 
 
 **Date added to GLIMS** (`glims_added_extinct_date`) — The date on which you are submitting this information (`YYYY-MM-DD`). If left blank, today's date will be used.
 
