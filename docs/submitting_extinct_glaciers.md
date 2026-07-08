@@ -10,7 +10,7 @@ The following cases are examples and not an exhaustive list.
 
 * A glacier has completely melted away;
 * The area of glacier ice is smaller than generally considered to be a glacier (e.g. $0.01 \mathrm{km}^{2}$)
-* Glacial ice is debris covered and is dead ice (e.g. )
+* Glacial ice is debris covered and is dead ice
 * Glacier ice can no longer be seen by experts on high resolution imagery
 * The area of glacier ice is less than the threshold set by a national inventory
 
