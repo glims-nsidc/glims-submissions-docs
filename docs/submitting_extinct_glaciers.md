@@ -35,7 +35,7 @@ For each glacier you are reporting as extinct, you will need the following:
 
 **Estimated disappearance date** (`est_disappear_date`) — Your best estimate of when the glacier disappeared, in ISO 8601 format (`YYYY-MM-DD`).  The date of disappearance should be the date that the glacier was observed to be gone in the field, or the date of the image that was used to determine it was gone.
 
-**Date uncertainty** (`est_disappear_unc`) — The uncertainty in the disappearance date, expressed as an integer number of days.
+**Date uncertainty** (`est_disappear_unc`) — The uncertainty in the disappearance date, expressed as an integer number of days.  This uncertainty can be estimated as the number of days between the last date the glacier was observed and the **Estimated disappearance date**.  Where the date last observed can be an observation in the field or the existence of the glacier in a previous inventory.
 
 **Source** (`gone_source`) — Attribution for the disappearance determination. This should include the name of the person who made the determination, their institution, and/or a relevant publication DOI or image ID. For example: `Jane Doe (University of X), Landsat 8 image LC08_L1TP_XYZ_20200901` or `Doe et al. 2023, https://doi.org/10.xxxx/xxxxx`.
 
