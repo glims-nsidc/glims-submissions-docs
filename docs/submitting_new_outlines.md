@@ -37,7 +37,7 @@ The submission title helps us track the submission.  We suggest a
 title that includes the name of the submitter and the name of the
 region being mapped.
 
-For example, "Agassiz, Glacier outlines of Switzerland"
+For example, "Agassiz, glacier outlines of Switzerland"
 
 #### Geographic Region
 
@@ -60,10 +60,10 @@ term.
 
 The person making the submission is the _submitter_.  Other people who
 helped map glacier outlines are _analysts_.  We would like the name,
-institution and an email for the _submitter_ and any _analyst_.  This
-allows GLIMS to give credit to the people mapping glaciers and also
-provides a contact if users of this information have questions about
-the outlines.
+institution and an email for the _submitter_ and any _analyst_ that
+contributed to the work.  This allows GLIMS to give credit to the
+people mapping glaciers and also provides a contact if users of this
+information have questions about the outlines.
 
 #### Files
 
@@ -155,6 +155,7 @@ Accepted `category` values.
 | "pro_lake" | Proglacial Lakes | Polygon or MultiPolygon with holes |
 | "supra_lake" | Supraglacial Lake outline | Polygon or MultiPolygon with holes |
 | "debris_cov" | Debris covered glacier ice | Polygon or MultiPolygon with holes |
+
 
 [^1]: You will need a GitHub account.  You can register for a free GitHub account [here](https://docs.github.com/en/get-started/start-your-journey/creating-an-account-on-github).
 
