@@ -132,20 +132,26 @@ Glacier outlines, debris cover, supraglacial lakes and proglacial lake features 
 
 #### Attributes
 
-| Attribute Name | Description | Data Type | Example |
-|----|------------|---|-----|
-| `name` | Glacier Name | string | `"Unteraargletscher"` |
-| `local_id` | ID assigned to glacier by analyst or part of regional inventory | string | `"0001"` |
-| WGMS glacier ID | ID assigned by World Glacier Monitoring Service | string | |
-| Image ID | ID for image assigned by image provider | string | |
-| Map ID | ID of map assigned by map publisher.  E.g. Sheet number | string | |
-| Instrument Name | Recognized name of instrument. | string | "Sentinel-2", "SuperDove" |
-| Acquisition Date | Date of image acquisition in ISO 8640 format | string | 2026-08-13 |
-| Analyst Name | Name of analyst who created outline | string | "Agassiz, Louis" |
-| `category` | Category of feature | string | "glacier_bound" |
+Attributes that can be assigned to individual glacier features (outlines, debris cover, etc) are listed below.   Required attributes are indicated in the "Required" column.  If outlines are mapped from satellite or aerial imagery, attributes marked "Y*" are required.  If outlines are mapped from maps, attributes marked "Y^" are required.
 
+| Attribute Name | Required | Description | Data Type | Example |
+|----|---|------|---|------------|
+| `name` | N | Glacier Name | string | `"Unteraargletscher"` |
+| `local_id` | Y | ID assigned to glacier by analyst or by regional inventory | string | `"0001"` |
+| `wgms_id` | N | ID assigned by World Glacier Monitoring Service | string | |
+| `inst_name` | Y* | Recognized name of instrument. | string | "Sentinel-2", "SuperDove" |
+| `orig_id` | Y* | ID for image assigned by image provider | string | "S2B_MSIL2A_20250722T102559_N0511_R108_T32TLR_20250722T143017" |
+| `acq_time` | Y* | Date of image acquisition in ISO 8640 format | string | 2026-08-13 or 2026-08-13 13:15:00 |
+| `map_name` | Y^ | title or name of map | string | "Zermatt Gornergrat" |
+| `auth_pub` | Y^ | Author or publisher of map | string | "Bundesamt fur Landestopographie" |
+| `pub_date` | Y^ | Date map published | string | "1998" |
+| `scale` | Y^ | Scale of map | string | "1:25000" |
+| `analyst_name` | Y | Name of analyst who created outline | string | "Agassiz, Louis" |
+| `category` | N | Category of feature | string | "glac_bound" |
 
-Accepted `category` values.
+: Attributes for glacier features {#tbl-feature-attributes .striped}
+
+Valid values for the `category` attribute are listed below.  The table also list the accepted geometry types for each feature.  A `category` attribute is only required if multiple glacier features are submitted.
 
 | `category` value | Description | Feature Types |
 |----------|--------------|---------------------|
@@ -155,6 +161,8 @@ Accepted `category` values.
 | "pro_lake" | Proglacial Lakes | Polygon or MultiPolygon with holes |
 | "supra_lake" | Supraglacial Lake outline | Polygon or MultiPolygon with holes |
 | "debris_cov" | Debris covered glacier ice | Polygon or MultiPolygon with holes |
+
+: Valid values for `category` attribute {#tbl-category-values}
 
 
 [^1]: You will need a GitHub account.  You can register for a free GitHub account [here](https://docs.github.com/en/get-started/start-your-journey/creating-an-account-on-github).
