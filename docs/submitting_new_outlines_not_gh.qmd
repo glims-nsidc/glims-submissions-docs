@@ -1,0 +1,165 @@
+# How to Submit New Outlines to GLIMS
+
+## Overview {#overview}
+
+This document is a guide to submitting new glacier outlines to the
+GLIMS Glacier Database.  The GLIMS Glacier Database is a multitemporal
+geospatial relational database containing glacier outlines and other
+features related to mapping glacier cover.  The databse also contains
+information about who created the outlines, the imagery or maps used
+to digitize the outlines, and the methods used for mapping.  The
+databse also tracks extinct glaciers.
+
+A basic submission consists or one or more glacier outlines for a
+region, information obout the people who mapped the outlines and the
+imagery used for this mapping.
+
+We describe the required information and file formats in the following sections.
+
+Please submit all files to glacierdata@nsidc.org.  The NSIDC team will review the submission and contact you with any questions about your submission or request for further information.
+
+## Required Information {#required_information}
+
+### Submission Metadata {#submission_metadata}
+
+#### Metadata Format {#metadata_format}
+
+Please submit the following metadata as a text file with metadata
+elements on separate lines.
+
+#### Submission Title {#submission_title}
+
+The submission title helps us track the submission.  We suggest a
+title that includes the name of the submitter and the name of the
+region being mapped.
+
+For example, "Agassiz, glacier outlines of Switzerland"
+
+#### Geographic Region {#geographic_region}
+
+The original GLIMS projects organized the mapping effort through
+Regional Centers.  GLIMS still uses Regional Center IDs.  For your
+submission please use the Regional Cneter ID that covers the outlines
+you are submitting.  A list of Regional Center IDs can be found on the
+[GLIMS Regional
+Centers](https://www.glims.org/maps/nsidc_rc_table_public.html) page.
+
+We also require the common name of the Geographic Region containing
+the glacier outlines.  For country inventories please use the country
+name (is there an ISO list). For multi-national regions, please use
+the commonly accepted name for this region, for example North America,
+European Alps, Himalaya, High Mountain Asia. For smaller regions,
+please give the state, mountain range or other commonly recognized
+term.
+
+#### Personel {#personnel}
+
+The person making the submission is the _submitter_.  Other people who
+helped map glacier outlines are _analysts_.  We would like the name,
+institution and an email for the _submitter_ and any _analyst_ that
+contributed to the work.  This allows GLIMS to give credit to the
+people mapping glaciers and also provides a contact if users of this
+information have questions about the outlines.
+
+#### Files {#files}
+
+Please provide a description of the contents of all files you are
+submitting.  See [Accepted File Formats]() for more information about
+the format and structure of files.
+
+#### Description of Analysis Methods {#description_of_analysis_methods}
+
+Please provide the date on which the analysis was performed.  Often
+analyses take a while to complete.  A date to the closest month is OK.
+For example, if mapping was done in October 2026, enter 2026-10-01.
+
+Use the form the indicate any image processing that was performed,
+e.g. image transformations, radiometric corrections, use of band
+ratios or thresholds.
+
+A brief description of the mapping method is also requested.  For
+example, **Manual digitizing of band ratios of Sentinel-2 images**.
+If an automated or semi-automated mapping procedure was used please
+indicate if manual corrections were made and what percentage of
+outlines were manually corrected.
+
+#### Embargo Period {#embargo_period}
+
+To encourage timely submission of outlines, glacier outlines submitted
+to GLIMS can be embargoed for a period of time.  The length of this
+time period is usually 6 months to allow analysts to prepare and
+submit journal articles.
+
+
+### Glacier Outlines and other glacier features {#glacier_outlines}
+
+#### Features in the GLIMS Glacier Database {#db_features}
+
+The majority of features in the GLIMS Glacier Database are glacier
+outlines.  However, the database also contains the outline of debris
+cover on glaciers; supraglacial and proglacial lakes; center lines of
+glaciers; and transient snow lines.  Glacier outlines are the only
+**required** features.
+
+#### Accepted file formats {#vector_file_formats}
+
+Glacier features can be submitted as ESRI Shapefiles or GeoJSON.  Most
+submissions use ESRI Shapefile.
+
+#### Feature Geometry {#feature_geometry}
+
+A glacier outline, debris cover, supraglacial lake or proglacial lake
+can be either a Polygon or MultiPolygon.  Center lines and transient
+snowlines should be LineStrings or MultiLineStrings
+
+Each type of glacier feature is mapped as a seprate vector entity.
+
+Glacier outline features should represent Nunataks[^2] as _holes_.
+Exposed ice within areas of debris cover and proglacial lakes, and
+islands in supraglacial lakes may also be represented as _holes_.
+
+Fragmented glaciers can be mapped as MultiPolygons, where each
+fragment is a polygon in the MultiPolygon collection.  Alternatively,
+fragments can be mapped as separate Polygons.  If fragments are mapped
+as separate Polygon features, all of the fragments of the same
+glacier must have the same id (see [feature attributes]())[^3].  
+
+Glacier outlines, debris cover, supraglacial lakes and proglacial lake features may be combined in a single shapefile.  If multiple feature types are included in the same shapefile, each feature must have a `category` attribute.  See @attributes.
+
+#### Attributes {#attributes}
+
+@tbl-feature-attributes lists the attributes that can be assigned to individual glacier features (outlines, debris cover, etc).   Required attributes are indicated in the "Required" column.  If outlines are mapped from satellite or aerial imagery, attributes marked "Y*" are required.  If outlines are mapped from maps, attributes marked "Y^" are required.
+
+| Attribute Name | Required | Description | Data Type | Example |
+|----|---|------|---|------------|
+| `name` | N | Glacier Name | string | `"Unteraargletscher"` |
+| `local_id` | Y | ID assigned to glacier by analyst or by regional inventory | string | `"0001"` |
+| `wgms_id` | N | ID assigned by World Glacier Monitoring Service | string | |
+| `inst_name` | Y* | Recognized name of instrument. | string | "Sentinel-2", "SuperDove" |
+| `orig_id` | Y* | ID for image assigned by image provider | string | "S2B_MSIL2A_20250722T102559_N0511_R108_T32TLR_20250722T143017" |
+| `acq_time` | Y* | Date of image acquisition in ISO 8640 format | string | 2026-08-13 or 2026-08-13 13:15:00 |
+| `map_name` | Y^ | title or name of map | string | "Zermatt Gornergrat" |
+| `auth_pub` | Y^ | Author or publisher of map | string | "Bundesamt fur Landestopographie" |
+| `pub_date` | Y^ | Date map published | string | "1998" |
+| `scale` | Y^ | Scale of map | string | "1:25000" |
+| `analyst_name` | Y | Name of analyst who created outline | string | "Agassiz, Louis" |
+| `category` | N | Category of feature | string | "glac_bound" |
+
+: Attributes for glacier features {#tbl-feature-attributes .striped}
+
+@tbl-category-values list the valid values for the `category` attribute.  The table also list the accepted geometry types for each feature.  A `category` attribute is only required if multiple glacier features are submitted.
+
+| `category` value | Description | Feature Types |
+|----------|--------------|---------------------|
+| "glac_bound" | Glacier boundary | Polygon or MultiPolygon with holes |
+| "centerline" | Glacier centerline | LineString or MultiLineString |
+| "snow_line" | Location of snow line | LineString or MultiLineString |
+| "pro_lake" | Proglacial Lakes | Polygon or MultiPolygon with holes |
+| "supra_lake" | Supraglacial Lake outline | Polygon or MultiPolygon with holes |
+| "debris_cov" | Debris covered glacier ice | Polygon or MultiPolygon with holes |
+
+: Valid values for `category` attribute {#tbl-category-values}
+
+[^2]: A Nunatak is a mountain, or any exposed ground or bedrock, that projects from and is surrounded by glacier ice.
+
+[^3]: A glacier id can be an arbitrary identifier assigned by an analyst or an identifier assigned as part of a local glacier inventory.  GLIMS assigns GLIMS Glacier IDs to glaciers.  However, the GLIMS glacier database stores local identifiers.
