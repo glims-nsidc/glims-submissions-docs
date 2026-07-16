@@ -21,7 +21,7 @@ filling out the New Submission form.
 
 1. Navigate to the Issues tab in the glims-submissions GitHub Repo[^1]
 2. Click the blue "New Issue" buttom.  ![new-issue-button](images/new-issue-button.png)
-3. Select "New Submission" _Add image_
+3. Select "New Submission" ![new-submission](images/new-submission-selection.png)
 4. Fill out the form.  See [Submission Metadata](#submission-metadata) for more information.
 5. Upload glacier outlines
 
