@@ -1,12 +1,12 @@
-# Submitting a Resubmission or Correction to GLIMS
+# Re-submit Glacier Outlines or Correction to GLIMS
 
 ## Background
 
-Glacier outline submissions to GLIMS sometimes need to be revised after they have already been ingested into the GLIMS Glacier Database. This can happen for a number of reasons: an error is discovered in the geometry or metadata, a submitter provides updated or corrected data, or the instrument, session, or analyst information associated with a submission needs to be fixed.
+There are times when a glacier outline, already ingested to the GLIMS Glacier Database, may need to be revised. This includes revision to the glacier outline or corresponding metadata (e.g. instrument, analyst).
 
-The Ingest Resubmission/Correction issue form gives submitters and analysts a consistent way to flag these cases so the NSIDC DAAC team can identify what changed, trace it back to the original submission, and determine the right course of action.
+The Re-submission form allows Data Providers to flag a revision need, and provide the NSIDC DAAC Team with the information necessary to make a change in the Database.
 
-## Before Submitting
+## Before You Submit
 
 Before opening a resubmission, identify the submission that needs to be corrected. You will need:
 
@@ -18,7 +18,7 @@ If you are unsure which submission needs correcting, you can search the [GLIMS G
 
 ## Required Information
 
-For each resubmission or correction, you will need the following:
+For each re-submission or correction, you will need the following:
 
 **Original submission ID(s)** — The `Submission_Info` ID, RC ID, or other identifier for the submission(s) being corrected or resubmitted.
 
@@ -38,18 +38,18 @@ For each resubmission or correction, you will need the following:
 
 ## How to Submit
 
-Resubmissions and corrections are handled through the GLIMS submissions GitHub repository using an issue form.
+Re-submissions are handled through the GLIMS submissions GitHub repository using an issue form.
 
 1. Navigate to the [glims-submissions repository](https://github.com/glims-nsidc/glims-submissions/issues)
-2. Click **New Issue**.
-3. Select the **Glacier Ingest Resubmission/Correction** template.
-4. Fill in the title with a brief description, for example: `Ingest Resubmission/Correction: Norway 2024/2025 outlines`.
+2. Click **New Issue**. _add_image_
+3. Select the **Glacier Ingest Resubmission/Correction** template. _add_image_
+4. Fill in the title with a brief description, for example: `Ingest Re-submission/Correction: Norway 2024/2025 outlines`.
 5. Enter information into form fields.
 8. Click **Submit new issue**.
 
-## After Submission
+## After Issue Submission
 
-Once submitted, the issue is automatically labeled `resubmission`, which triggers two automated workflows: one parses the issue into a structured JSON record for the ingest pipeline, and the other creates a corresponding Story in the DPT Jira project for tracking. An NSIDC DAAC analyst will then review the request. You may be contacted with questions before the correction is processed.
+Once submitted, the submission will be reviewed by the NSIDC DAAC team. You may be contacted with questions before the data are revised. The records will be visible in the GLIMS Glacier Viewer as soon as they are updated.
 
 ## Questions
 
