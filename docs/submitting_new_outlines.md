@@ -17,7 +17,7 @@ imagery used for this mapping.
 We use GitHub to track submissions.  To submit new glacier outlines to
 the GLIMS Glacier Database create a [New Submission
 Issue](https://github.com/glims-nsidc/glims-submissions/issues) and
-filling out the New Submission form.
+filling out the `New Submission` form.
 
 1. Navigate to the Issues tab in the glims-submissions GitHub Repo[^1]
 2. Click the blue "New Issue" buttom.  ![new-issue-button](images/new-issue-button.png)
