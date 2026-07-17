@@ -49,7 +49,7 @@ Re-submissions are handled through the GLIMS submissions GitHub repository using
 
 ## After Issue Submission
 
-Once submitted, the submission will be reviewed by the NSIDC DAAC team. You may be contacted with questions before the data are revised. The records will be visible in the GLIMS Glacier Viewer as soon as they are updated.
+Once submitted, the re-submission will be reviewed by the NSIDC DAAC team. You may be contacted with questions before the data are revised. The records will be visible in the GLIMS Glacier Viewer as soon as they are updated.
 
 ## Questions
 
