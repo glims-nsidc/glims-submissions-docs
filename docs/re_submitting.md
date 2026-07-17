@@ -8,7 +8,7 @@ The Re-submission form allows Data Providers to flag a revision need, and provid
 
 ## Before You Submit
 
-Before opening a resubmission, identify the submission that needs to be corrected. You will need:
+Before opening a re-submission, identify the submission that needs to be corrected. You will need:
 
 * The **original submission ID** (the `Submission_Info` ID in the GLIMS database)
 * The **RC ID** or region label associated with the original submission
