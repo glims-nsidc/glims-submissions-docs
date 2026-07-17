@@ -17,7 +17,7 @@ The following cases are examples and not an exhaustive list.
 When GLIMS data are downloaded, extinct glaciers have a value of gone in the glacier_status (or glac_stat) field, enabling analysis of trends across geographic regions.
 
 
-## Before Submitting 
+## Before You Submit 
 
 First determine if the extinct glacier or glaciers is in the GLIMS Glacier Database.
 
@@ -38,7 +38,7 @@ For each glacier you are reporting as extinct, you will need the following:
 
 **Source** (`gone_source`) — Attribution for the disappearance determination. This should include the name of the person who made the determination, their institution, and/or a relevant publication DOI or image ID. For example: `Jane Doe (University of X), Landsat 8 image LC08_L1TP_XYZ_20200901` or `Doe et al. 2023, https://doi.org/10.xxxx/xxxxx`.
 
-**Method** (`method`) - 
+**Method** (`method`) - Method for determining the glaciers are extinct.
 
 **Date added to GLIMS** (`glims_added_extinct_date`) — The date on which you are submitting this information (`YYYY-MM-DD`). If left blank, today's date will be used.
 
