@@ -4,6 +4,7 @@
 :maxdepth: 1
 :hidden:
 
+re_submitting
 submitting_extinct_glaciers
 ```
 
