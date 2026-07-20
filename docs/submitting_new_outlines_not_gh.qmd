@@ -36,7 +36,7 @@ Please submit all files to glacierdata@nsidc.org.  The NSIDC team will review th
 Please submit the following metadata as a text file with metadata
 elements on separate lines.
 
-#### Submission Title {#submission_title}
+#### _Title of Submission_ {#submission_title}
 
 The submission title helps us track the submission.  We suggest a
 title that includes the name of the submitter, the name of the
@@ -44,7 +44,7 @@ region being mapped, and the year for which glaciers are mapped.
 
 For example, "Agassiz, glacier outlines of Switzerland, 1840"
 
-#### Geographic Region {#geographic_region}
+#### _Geographic Region_ {#geographic_region}
 
 The original GLIMS project organized the mapping effort through
 Regional Centers.  GLIMS still uses Regional Center IDs.  For your
@@ -61,7 +61,7 @@ European Alps, Himalaya, High Mountain Asia. For smaller regions,
 please give the state, mountain range or other commonly recognized
 term.
 
-#### Personel {#personnel}
+#### _Personel_ {#personnel}
 
 The person making the submission is the _submitter_.  Other people who
 helped map glacier outlines are _analysts_.  We would like the name,
@@ -70,13 +70,13 @@ contributed to the work.  This allows GLIMS to give credit to the
 people mapping glaciers and also provides a contact if users of this
 information have questions about the outlines.
 
-#### Files {#files}
+#### _Files_ {#files}
 
 Please provide a description of the contents of all files you are
 submitting.  See [Accepted File Formats]() for more information about
 the format and structure of files.
 
-#### Description of Analysis Methods {#description_of_analysis_methods}
+#### _Description of Analysis Methods_ {#description_of_analysis_methods}
 
 Please provide the date on which the analysis was performed.  Often
 analyses take a while to complete.  A date to the closest month is OK.
@@ -92,12 +92,16 @@ If an automated or semi-automated mapping procedure was used please
 indicate if manual corrections were made and what percentage of
 outlines were manually corrected.
 
-#### Embargo Period {#embargo_period}
+#### _Embargo Period_ {#embargo_period}
 
 To encourage timely submission of outlines, glacier outlines submitted
 to GLIMS can be embargoed for a period of time.  The length of this
 time period is usually 6 months to allow analysts to prepare and
 submit journal articles.
+
+#### _Related Publications_
+
+Please provide the citation for any publications related to the submitted outlines.
 
 
 ### Glacier Outlines and other glacier features {#glacier_outlines}
