@@ -1,4 +1,13 @@
-# How to Submit New Outlines to GLIMS
+---
+title: "How to Submit New Outlines to GLIMS"
+author: NSIDC
+date: last-modified
+format:
+  pdf:
+    mainfont: "Liberation Sans"
+toc: true
+toc-depth: 4
+---
 
 ## Overview {#overview}
 
