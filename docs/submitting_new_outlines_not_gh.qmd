@@ -17,12 +17,10 @@ geospatial relational database containing glacier outlines and other
 features related to mapping glacier cover.  The database also contains
 information about who created the outlines, the imagery or maps used
 to digitize the outlines, and the methods used for mapping, as well as
-documenting extinct glaciers.
-
-_Extinct glaciers should be submitted separately._
+documenting extinct glaciers[^1].
 
 A basic submission consists or one or more glacier outlines for a
-region, information obout the people who mapped the outlines and the
+region, information about the people who mapped the outlines and the
 imagery used for this mapping.
 
 We describe the required information and file formats in the following sections.
@@ -170,6 +168,8 @@ Glacier outlines, debris cover, supraglacial lakes and proglacial lake features 
 | "debris_cov" | Debris covered glacier ice | Polygon or MultiPolygon with holes |
 
 : Valid values for `category` attribute {#tbl-category-values}
+
+[^1]: Extinct glaciers should be submitted separately.
 
 [^2]: A Nunatak is a mountain, or any exposed ground or bedrock, that projects from and is surrounded by glacier ice.
 
