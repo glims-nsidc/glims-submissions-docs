@@ -175,7 +175,7 @@ If the outlines shapefile contains named and unnamed glaciers, the value of `nam
 
 : Valid values for `category` attribute {#tbl-category-values}
 
-[^1]: Extinct glaciers should be submitted separately.
+[^1]: Extinct glaciers should be a separate submission.
 
 [^2]: A Nunatak is a mountain, or any exposed ground or bedrock, that projects from and is surrounded by glacier ice.
 
