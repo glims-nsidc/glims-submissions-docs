@@ -33,8 +33,8 @@ Please submit all files to glacierdata@nsidc.org.  The NSIDC team will review th
 
 #### Metadata Format {#metadata_format}
 
-Please submit the following metadata as a text file with metadata
-elements on separate lines.
+Please submit the following metadata as a text file with each metadata
+element on a separate lines.
 
 #### _Title of Submission_ {#submission_title}
 
@@ -48,7 +48,7 @@ For example, "Agassiz, glacier outlines of Switzerland, 1840"
 
 The original GLIMS project organized the mapping effort through
 Regional Centers.  GLIMS still uses Regional Center IDs.  For your
-submission please use the Regional Cneter ID that covers the outlines
+submission please use the Regional Center ID that covers the outlines
 you are submitting.  A list of Regional Center IDs can be found on the
 [GLIMS Regional
 Centers](https://www.glims.org/maps/nsidc_rc_table_public.html) page.
@@ -82,7 +82,7 @@ Please provide the date on which the analysis was performed.  Often
 analyses take a while to complete.  A date to the closest month is OK.
 For example, if mapping was done in October 2026, enter 2026-10-01.
 
-Use the form the indicate any image processing that was performed,
+Describe any image processing that was performed,
 e.g. image transformations, radiometric corrections, use of band
 ratios or thresholds.
 
@@ -125,7 +125,7 @@ A glacier outline, debris cover, supraglacial lake or proglacial lake
 can be either a Polygon or MultiPolygon.  Center lines and transient
 snowlines should be LineStrings or MultiLineStrings
 
-Each type of glacier feature is mapped as a seprate vector entity.
+Each type of glacier feature is mapped as a separate vector entity.
 
 Glacier outline features should represent Nunataks[^2] as _holes_.
 Exposed ice within areas of debris cover and proglacial lakes, and
