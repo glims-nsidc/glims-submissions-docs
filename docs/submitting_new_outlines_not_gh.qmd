@@ -5,10 +5,12 @@
 This document is a guide to submitting new glacier outlines to the
 GLIMS Glacier Database.  The GLIMS Glacier Database is a multitemporal
 geospatial relational database containing glacier outlines and other
-features related to mapping glacier cover.  The databse also contains
+features related to mapping glacier cover.  The database also contains
 information about who created the outlines, the imagery or maps used
-to digitize the outlines, and the methods used for mapping.  The
-databse also tracks extinct glaciers.
+to digitize the outlines, and the methods used for mapping, as well as
+documenting extinct glaciers.
+
+_Extinct glaciers should be submitted separately._
 
 A basic submission consists or one or more glacier outlines for a
 region, information obout the people who mapped the outlines and the
@@ -30,14 +32,14 @@ elements on separate lines.
 #### Submission Title {#submission_title}
 
 The submission title helps us track the submission.  We suggest a
-title that includes the name of the submitter and the name of the
-region being mapped.
+title that includes the name of the submitter, the name of the
+region being mapped, and the year for which glaciers are mapped.
 
-For example, "Agassiz, glacier outlines of Switzerland"
+For example, "Agassiz, glacier outlines of Switzerland, 1840"
 
 #### Geographic Region {#geographic_region}
 
-The original GLIMS projects organized the mapping effort through
+The original GLIMS project organized the mapping effort through
 Regional Centers.  GLIMS still uses Regional Center IDs.  For your
 submission please use the Regional Cneter ID that covers the outlines
 you are submitting.  A list of Regional Center IDs can be found on the
@@ -46,7 +48,7 @@ Centers](https://www.glims.org/maps/nsidc_rc_table_public.html) page.
 
 We also require the common name of the Geographic Region containing
 the glacier outlines.  For country inventories please use the country
-name (is there an ISO list). For multi-national regions, please use
+name. For multi-national regions, please use
 the commonly accepted name for this region, for example North America,
 European Alps, Himalaya, High Mountain Asia. For smaller regions,
 please give the state, mountain range or other commonly recognized
