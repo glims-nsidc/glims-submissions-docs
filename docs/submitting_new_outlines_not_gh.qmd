@@ -160,7 +160,9 @@ Glacier outlines, debris cover, supraglacial lakes and proglacial lake features 
 
 : Attributes for glacier features {#tbl-feature-attributes .striped}
 
-@tbl-category-values list the valid values for the `category` attribute.  The table also list the accepted geometry types for each feature.  A `category` attribute is only required if multiple glacier features are submitted.
+If the outlines shapefile contains named and unnamed glaciers, the value of `name` for unnamed glaciers should be an empty string, e.g. "".
+
+@tbl-category-values list the valid values for the `category` attribute.  The table also lists the accepted geometry types for each feature.  A `category` attribute is only required if multiple glacier features are submitted.
 
 | `category` value | Description | Feature Types |
 |----------|--------------|---------------------|
@@ -177,4 +179,4 @@ Glacier outlines, debris cover, supraglacial lakes and proglacial lake features 
 
 [^2]: A Nunatak is a mountain, or any exposed ground or bedrock, that projects from and is surrounded by glacier ice.
 
-[^3]: A glacier id can be an arbitrary identifier assigned by an analyst or an identifier assigned as part of a local glacier inventory.  GLIMS assigns GLIMS Glacier IDs to glaciers.  However, the GLIMS glacier database stores local identifiers.
+[^3]: A glacier id can be an arbitrary identifier assigned by an analyst or an identifier assigned as part of a local glacier inventory.  GLIMS assigns GLIMS Glacier IDs to glaciers.  However, the GLIMS glacier database also stores local identifiers.
