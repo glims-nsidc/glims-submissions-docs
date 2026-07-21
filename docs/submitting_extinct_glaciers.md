@@ -1,7 +1,5 @@
 # Submitting Extinct Glaciers to GLIMS
 
-## Background
-
 GLIMS (Global Land Ice Measurements from Space) tracks glaciers that have disappeared by marking their status as gone in the GLIMS Glacier Database. This capability was added in 2023 in recognition of the growing number of glaciers that have completely melted away or shrunk to the point that local experts no longer consider them glaciers.
 
 A glacier is considered extinct when local or regional experts determine that the glacier can no longer be identified or considered as a glacier.  This determination can be made based on direct observations in the field or based on remotely sensed imagery.  

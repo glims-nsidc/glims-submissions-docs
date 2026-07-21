@@ -1,7 +1,5 @@
 # Re-submit Glacier Outlines or Correction to GLIMS
 
-## Background
-
 There are times when a glacier outline, already ingested to the GLIMS Glacier Database, may need to be revised. This includes revision to the glacier outline or corresponding metadata (e.g. instrument, analyst).
 
 The Re-submission form allows Data Providers to flag a revision need, and provide the NSIDC DAAC Team with the information necessary to make a change in the Database.
