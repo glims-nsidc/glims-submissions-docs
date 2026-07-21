@@ -14,6 +14,8 @@ A basic submission consists or one or more glacier outlines for a
 region, information obout the people who mapped the outlines and the
 imagery used for this mapping.
 
+## How to Submit
+
 We use GitHub to track submissions.  To submit new glacier outlines to
 the GLIMS Glacier Database create a [New Submission
 Issue](https://github.com/glims-nsidc/glims-submissions/issues) and
@@ -170,3 +172,7 @@ Valid values for the `category` attribute are listed below.  The table also list
 [^2]: A Nunatak is a mountain, or any exposed ground or bedrock, that projects from and is surrounded by glacier ice.
 
 [^3]: A glacier id can be an arbitrary identifier assigned by an analyst or an identifier assigned as part of a local glacier inventory.  GLIMS assigns GLIMS Glacier IDs to glaciers.  However, the GLIMS glacier database stores local identifiers.
+
+## Questions
+
+For questions, please contact NSIDC User Services at nsidc@nsidc.org.
