@@ -46,7 +46,7 @@ Extinct glacier submissions are handled through the GLIMS submissions GitHub rep
 
 1. Navigate to the [glims-submissions repository](https://github.com/glims-nsidc/glims-submissions/issues)
 2. Click **New Issue**. ![new-issue-button](images/new-issue-button.png)
-3. Select the **Extinct Glacier** template.
+3. Select the **Extinct Glacier** template. ![extinct-glacier-button](images/extinct-glacier-button.png)
 4. Fill in the title with the region where this glacier is, for example: `Extinct glacier: North Cascade glaciers, USA`. 
 5. Enter your glacier IDs in the **Glacier IDs** field — one ID per line. For larger submissions, you may attach a `.txt`, `.csv`, or `.xlsx` file instead of pasting IDs directly. If providing a file, place glacier IDs in the first column with no header row.
 6. Complete the remaining fields in the form.
