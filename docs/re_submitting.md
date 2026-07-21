@@ -42,7 +42,7 @@ Re-submissions are handled through the GLIMS submissions GitHub repository using
 
 1. Navigate to the [glims-submissions repository](https://github.com/glims-nsidc/glims-submissions/issues)
 2. Click **New Issue**. ![new-issue-button](images/new-issue-button.png)
-3. Select the **Glacier Ingest Resubmission/Correction** template. ![re-submission-button](re-submission.png)
+3. Select the **Glacier Ingest Resubmission/Correction** template. ![re-submission-button](images/re-submission.png)
 4. Fill in the title with a brief description, for example: `Ingest Re-submission/Correction: Norway 2024/2025 outlines`.
 5. Enter information into form fields.
 8. Click **Submit new issue**.
