@@ -36,7 +36,11 @@ For each glacier you are reporting as extinct, you will need the following:
 
 **Source** (`gone_source`) — Attribution for the disappearance determination. This should include the name of the person who made the determination, their institution, and/or a relevant publication DOI or image ID. For example: `Jane Doe (University of X), Landsat 8 image LC08_L1TP_XYZ_20200901` or `Doe et al. 2023, https://doi.org/10.xxxx/xxxxx`.
 
-**Method** (`method`) - Method for determining the glaciers are extinct.
+**Method** (`method`) - Method for determining the glaciers are extinct. This is a dropdown with these options:
+    - Differencing of inventories
+    - In situ visit
+    - Imagery comparisons
+    - Other (explain in notes)
 
 **Date added to GLIMS** (`glims_added_extinct_date`) — The date on which you are submitting this information (`YYYY-MM-DD`). If left blank, today's date will be used.
 

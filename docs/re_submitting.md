@@ -22,7 +22,7 @@ For each re-submission or correction, you will need the following:
 
 **Link to previous submission** (optional) — The URL of the GitHub issue for the original submission, if available. This helps the analyst quickly pull up the full history of the original request. Trello link or documentation from prior emails is also acceptable here as this transition to github is still ongoing.
 
-**Reason for resubmission** — A short categorization of why the resubmission is needed. Options include:
+**Reason for resubmission** — A short categorization of why the resubmission is needed. Dropdown options include:
 * Geometry/outline correction
 * Metadata error (e.g. `rc_id`, `region_label`, `submitter_id`)
 * Instrument/session info correction
