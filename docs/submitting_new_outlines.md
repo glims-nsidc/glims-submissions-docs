@@ -8,11 +8,13 @@ geospatial relational database containing glacier outlines and other
 features related to mapping glacier cover.  The database also contains
 information about who created the outlines, the imagery or maps used
 to digitize the outlines, and the methods used for mapping.  The
-database also tracks extinct glaciers.
+database also tracks extinct glaciers[^1].
 
 A basic submission consists or one or more glacier outlines for a
 region, information obout the people who mapped the outlines and the
 imagery used for this mapping.
+
+The information and file formats that are required to submit new outlines to GLIMS are described in the following sections.
 
 ## How to Submit
 
@@ -176,3 +178,5 @@ Valid values for the `category` attribute are listed below.  The table also list
 ## Questions
 
 For questions, please contact NSIDC User Services at nsidc@nsidc.org.
+
+[^1]: Extinct glaciers should be a separate submission.  See [Submitting Extinct Glaciers to GLIMS](submitting_extinct_glaciers.html)
