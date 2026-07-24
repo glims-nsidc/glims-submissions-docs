@@ -4,6 +4,9 @@
 :maxdepth: 1
 :hidden:
 
+
+submitting_new_outlines
+re_submitting
 submitting_extinct_glaciers
 ```
 
