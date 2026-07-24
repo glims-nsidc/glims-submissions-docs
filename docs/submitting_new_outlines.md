@@ -5,10 +5,10 @@
 This document is a guide to submitting new glacier outlines to the
 GLIMS Glacier Database.  The GLIMS Glacier Database is a multitemporal
 geospatial relational database containing glacier outlines and other
-features related to mapping glacier cover.  The databse also contains
+features related to mapping glacier cover.  The database also contains
 information about who created the outlines, the imagery or maps used
 to digitize the outlines, and the methods used for mapping.  The
-databse also tracks extinct glaciers.
+database also tracks extinct glaciers.
 
 A basic submission consists or one or more glacier outlines for a
 region, information obout the people who mapped the outlines and the
