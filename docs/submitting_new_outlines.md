@@ -23,7 +23,7 @@ the GLIMS Glacier Database create a [New Submission
 Issue](https://github.com/glims-nsidc/glims-submissions/issues) and
 filling out the `New Submission` form.
 
-1. Navigate to the Issues tab in the glims-submissions GitHub Repo[^1]
+1. Navigate to the Issues tab in the glims-submissions GitHub Repo[^2]
 2. Click the blue "New Issue" buttom.  ![new-issue-button](images/new-issue-button.png)
 3. Select "New Submission" ![new-submission](images/new-submission-selection.png)
 4. Fill out the form.  See [Submission Metadata](#submission-metadata) for more information.
@@ -35,15 +35,15 @@ We describe the required information and file formats in the following sections.
 
 ### Submission Metadata
 
-#### Submission Title
+#### _Title of the Submission_
 
 The submission title helps us track the submission.  We suggest a
 title that includes the name of the submitter and the name of the
-region being mapped.
+region being mapped, and year of the outlines.
 
-For example, "Agassiz, glacier outlines of Switzerland"
+For example, "Agassiz, glacier outlines of Switzerland, 1840"
 
-#### Geographic Region
+#### _Geographic Region_
 
 The original GLIMS projects organized the mapping effort through
 Regional Centers.  GLIMS still uses Regional Center IDs.  For your
@@ -54,13 +54,13 @@ Centers](https://www.glims.org/maps/nsidc_rc_table_public.html) page.
 
 We also require the common name of the Geographic Region containing
 the glacier outlines.  For country inventories please use the country
-name (is there an ISO list). For multi-national regions, please use
+name. For multi-national regions, please use
 the commonly accepted name for this region, for example North America,
 European Alps, Himalaya, High Mountain Asia. For smaller regions,
 please give the state, mountain range or other commonly recognized
-term.
+name.
 
-#### Personel
+#### _Personel_
 
 The person making the submission is the _submitter_.  Other people who
 helped map glacier outlines are _analysts_.  We would like the name,
@@ -69,13 +69,13 @@ contributed to the work.  This allows GLIMS to give credit to the
 people mapping glaciers and also provides a contact if users of this
 information have questions about the outlines.
 
-#### Files
+#### _Files_
 
 Please provide a description of the contents of all files you are
-submitting.  See [Accepted File Formats]() for more information about
+submitting.  See [](accepted-file-formats) for more information about
 the format and structure of files.
 
-#### Description of Analysis Methods
+#### _Description of Analysis Methods_
 
 Please provide the date on which the analysis was performed.  Often
 analyses take a while to complete.  A date to the closest month is OK.
@@ -91,12 +91,17 @@ If an automated or semi-automated mapping procedure was used please
 indicate if manual corrections were made and what percentage of
 outlines were manually corrected.
 
-#### Embargo Period
+#### _Embargo Period_
 
 To encourage timely submission of outlines, glacier outlines submitted
 to GLIMS can be embargoed for a period of time.  The length of this
 time period is usually 6 months to allow analysts to prepare and
 submit journal articles.
+
+#### _Related Publications_
+
+Please provide the citation for any publications related to the
+submitted outlines.  Please provide a DOI if one is available.
 
 
 ### Glacier Outlines and other glacier features
@@ -122,7 +127,7 @@ snowlines should be LineStrings or MultiLineStrings
 
 Each type of glacier feature is mapped as a seprate vector entity.
 
-Glacier outline features should represent Nunataks[^2] as _holes_.
+Glacier outline features should represent Nunataks[^3] as _holes_.
 Exposed ice within areas of debris cover and proglacial lakes, and
 islands in supraglacial lakes may also be represented as _holes_.
 
@@ -130,13 +135,15 @@ Fragmented glaciers can be mapped as MultiPolygons, where each
 fragment is a polygon in the MultiPolygon collection.  Alternatively,
 fragments can be mapped as separate Polygons.  If fragments are mapped
 as separate Polygon features, all of the fragments of the same
-glacier must have the same id (see [feature attributes]())[^3].  
+glacier must have the same id (see [](feature-attributes))[^4].  
 
-Glacier outlines, debris cover, supraglacial lakes and proglacial lake features may be combined in a single shapefile.  If multiple feature types are included in the same shapefile, each feature must have a `category` attribute.  See [Attributes](attributes).
+Glacier outlines, debris cover, supraglacial lakes and proglacial lake features may be combined in a single shapefile.  If multiple feature types are included in the same shapefile, each feature must have a `category` attribute.  Debris cover, supraglacial lakes, proglacial lakes, centerlines and snow lines associated with a glacier must have the same id.  See [](attributes).
 
 #### Attributes
 
-Attributes that can be assigned to individual glacier features (outlines, debris cover, etc) are listed below.   Required attributes are indicated in the "Required" column.  If outlines are mapped from satellite or aerial imagery, attributes marked "Y*" are required.  If outlines are mapped from maps, attributes marked "Y^" are required.
+The attributes that can be assigned to individual glacier features (outlines, debris cover, etc) are listed below.   Required attributes are indicated in the "Required" column.  If outlines are mapped from satellite or aerial imagery, attributes marked "Y*" are required.  If outlines are mapped from maps, attributes marked "Y^" are required.
+
+.. table:: Attributes for glacier features {#tbl-feature-attributes .striped}
 
 | Attribute Name | Required | Description | Data Type | Example |
 |----|---|------|---|------------|
@@ -153,9 +160,10 @@ Attributes that can be assigned to individual glacier features (outlines, debris
 | `analyst_name` | Y | Name of analyst who created outline | string | "Agassiz, Louis" |
 | `category` | N | Category of feature | string | "glac_bound" |
 
-: Attributes for glacier features {#tbl-feature-attributes .striped}
 
-Valid values for the `category` attribute are listed below.  The table also list the accepted geometry types for each feature.  A `category` attribute is only required if multiple glacier features are submitted.
+Valid values for the `category` attribute are listed below.  The table also lists the accepted geometry types for each feature.  A `category` attribute is only required if multiple glacier features are submitted.
+
+.. table:: Valid values for `category` attribute {#tbl-category-values}
 
 | `category` value | Description | Feature Types |
 |----------|--------------|---------------------|
@@ -166,17 +174,15 @@ Valid values for the `category` attribute are listed below.  The table also list
 | "supra_lake" | Supraglacial Lake outline | Polygon or MultiPolygon with holes |
 | "debris_cov" | Debris covered glacier ice | Polygon or MultiPolygon with holes |
 
-: Valid values for `category` attribute {#tbl-category-values}
-
-
-[^1]: You will need a GitHub account.  You can register for a free GitHub account [here](https://docs.github.com/en/get-started/start-your-journey/creating-an-account-on-github).
-
-[^2]: A Nunatak is a mountain, or any exposed ground or bedrock, that projects from and is surrounded by glacier ice.
-
-[^3]: A glacier id can be an arbitrary identifier assigned by an analyst or an identifier assigned as part of a local glacier inventory.  GLIMS assigns GLIMS Glacier IDs to glaciers.  However, the GLIMS glacier database stores local identifiers.
 
 ## Questions
 
 For questions, please contact NSIDC User Services at nsidc@nsidc.org.
 
 [^1]: Extinct glaciers should be a separate submission.  See [Submitting Extinct Glaciers to GLIMS](submitting_extinct_glaciers.html)
+
+[^2]: You will need a GitHub account.  You can register for a free GitHub account [here](https://docs.github.com/en/get-started/start-your-journey/creating-an-account-on-github).
+
+[^3]: A Nunatak is a mountain, or any exposed ground or bedrock, that projects from and is surrounded by glacier ice.
+
+[^4]: A glacier id can be an arbitrary identifier assigned by an analyst or an identifier assigned as part of a local glacier inventory.  GLIMS assigns GLIMS Glacier IDs to glaciers.  However, the GLIMS glacier database stores local identifiers.
