@@ -7,7 +7,7 @@ GLIMS (Global Land Ice Measurements from Space).
   submitting new glacier outlines
 - **[Re-submissions & corrections](re_submitting.md)** — instructions for updating or correcting
   previously submitted data
-- **[Extinct glaciers](submitting_extinct_glaciers.md)** — reporting glaciers that no
+- **[Extinct glaciers](submitting_extinct_glaciers.md)** — instructions for reporting glaciers that no
   longer exist
 
 For anything else, [open an issue](https://github.com/glims-nsidc/glims-submissions/issues)
