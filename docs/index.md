@@ -5,7 +5,7 @@ GLIMS (Global Land Ice Measurements from Space).
 
 - **[New submissions](submitting_new_outlines.md)** — instructions for preparing and
   submitting new glacier outlines
-- **[Re-submissions & corrections](re_submitting.md)** — updating or correcting
+- **[Re-submissions & corrections](re_submitting.md)** — instructions for updating or correcting
   previously submitted data
 - **[Extinct glaciers](submitting_extinct_glaciers.md)** — reporting glaciers that no
   longer exist
