@@ -1,58 +1,68 @@
-# How to Submit New Outlines to GLIMS
+---
+title: "How to Submit New Outlines to GLIMS"
+author: NSIDC
+date: last-modified
+format:
+  pdf:
+    mainfont: "Liberation Sans"
+number-sections: true
+toc: true
+toc-depth: 4
+---
 
-## Overview {#overview}
+## Overview {#sec-overview}
 
 This document is a guide to submitting new glacier outlines to the
 GLIMS Glacier Database.  The GLIMS Glacier Database is a multitemporal
 geospatial relational database containing glacier outlines and other
-features related to mapping glacier cover.  The databse also contains
+features related to mapping glacier cover.  The database also contains
 information about who created the outlines, the imagery or maps used
-to digitize the outlines, and the methods used for mapping.  The
-databse also tracks extinct glaciers.
+to digitize the outlines, and the methods used for mapping, as well as
+documenting extinct glaciers[^1].
 
 A basic submission consists or one or more glacier outlines for a
-region, information obout the people who mapped the outlines and the
+region, information about the people who mapped the outlines and the
 imagery used for this mapping.
 
 We describe the required information and file formats in the following sections.
 
 Please submit all files to glacierdata@nsidc.org.  The NSIDC team will review the submission and contact you with any questions about your submission or request for further information.
 
-## Required Information {#required_information}
+## Required Information {#sec-required_information}
 
-### Submission Metadata {#submission_metadata}
+### Submission Metadata {#sec-submission_metadata}
 
-#### Metadata Format {#metadata_format}
+#### Metadata Format {#sec-metadata_format}
 
-Please submit the following metadata as a text file with metadata
-elements on separate lines.
+Please submit the following metadata as a text file with each metadata
+element on a separate lines.
 
-#### Submission Title {#submission_title}
+#### _Title of Submission_ {#sec-submission_title}
 
 The submission title helps us track the submission.  We suggest a
-title that includes the name of the submitter and the name of the
-region being mapped.
+title that includes the name of the submitter, the name of the
+region being mapped, and the year for which glaciers are mapped.
 
-For example, "Agassiz, glacier outlines of Switzerland"
+For example, "Agassiz, glacier outlines of Switzerland, 1840"
 
-#### Geographic Region {#geographic_region}
+#### _Geographic Region_ {#sec-geographic_region}
 
-The original GLIMS projects organized the mapping effort through
+The original GLIMS project organized the mapping effort through
 Regional Centers.  GLIMS still uses Regional Center IDs.  For your
-submission please use the Regional Cneter ID that covers the outlines
+submission please use the Regional Center ID that covers the outlines
 you are submitting.  A list of Regional Center IDs can be found on the
 [GLIMS Regional
 Centers](https://www.glims.org/maps/nsidc_rc_table_public.html) page.
 
 We also require the common name of the Geographic Region containing
 the glacier outlines.  For country inventories please use the country
-name (is there an ISO list). For multi-national regions, please use
+name. For multi-national regions, please use
 the commonly accepted name for this region, for example North America,
 European Alps, Himalaya, High Mountain Asia. For smaller regions,
 please give the state, mountain range or other commonly recognized
 term.
 
-#### Personel {#personnel}
+#### _Personel_ {#sec-personnel}
 
 The person making the submission is the _submitter_.  Other people who
 helped map glacier outlines are _analysts_.  We would like the name,
@@ -61,19 +71,19 @@ contributed to the work.  This allows GLIMS to give credit to the
 people mapping glaciers and also provides a contact if users of this
 information have questions about the outlines.
 
-#### Files {#files}
+#### _Files_ {#sec-files}
 
 Please provide a description of the contents of all files you are
 submitting.  See [Accepted File Formats]() for more information about
 the format and structure of files.
 
-#### Description of Analysis Methods {#description_of_analysis_methods}
+#### _Description of Analysis Methods_ {#sec-description_of_analysis_methods}
 
 Please provide the date on which the analysis was performed.  Often
 analyses take a while to complete.  A date to the closest month is OK.
 For example, if mapping was done in October 2026, enter 2026-10-01.
 
-Use the form the indicate any image processing that was performed,
+Describe any image processing that was performed,
 e.g. image transformations, radiometric corrections, use of band
 ratios or thresholds.
 
@@ -83,17 +93,22 @@ If an automated or semi-automated mapping procedure was used please
 indicate if manual corrections were made and what percentage of
 outlines were manually corrected.
 
-#### Embargo Period {#embargo_period}
+#### _Embargo Period_ {#sec-embargo_period}
 
 To encourage timely submission of outlines, glacier outlines submitted
 to GLIMS can be embargoed for a period of time.  The length of this
 time period is usually 6 months to allow analysts to prepare and
 submit journal articles.
 
+#### _Related Publications_ {#sec-related-publications}
 
-### Glacier Outlines and other glacier features {#glacier_outlines}
+Please provide the citation for any publications related to the
+submitted outlines.  Please provide a DOI if one is available.
 
-#### Features in the GLIMS Glacier Database {#db_features}
+
+### Glacier Outlines and other glacier features {#sec-glacier_outlines}
+
+#### Features in the GLIMS Glacier Database {#sec-db_features}
 
 The majority of features in the GLIMS Glacier Database are glacier
 outlines.  However, the database also contains the outline of debris
@@ -101,18 +116,18 @@ cover on glaciers; supraglacial and proglacial lakes; center lines of
 glaciers; and transient snow lines.  Glacier outlines are the only
 **required** features.
 
-#### Accepted file formats {#vector_file_formats}
+#### Accepted file formats {#sec-vector_file_formats}
 
 Glacier features can be submitted as ESRI Shapefiles or GeoJSON.  Most
 submissions use ESRI Shapefile.
 
-#### Feature Geometry {#feature_geometry}
+#### Feature Geometry {#sec-feature_geometry}
 
 A glacier outline, debris cover, supraglacial lake or proglacial lake
 can be either a Polygon or MultiPolygon.  Center lines and transient
 snowlines should be LineStrings or MultiLineStrings
 
-Each type of glacier feature is mapped as a seprate vector entity.
+Each type of glacier feature is mapped as a separate vector entity.
 
 Glacier outline features should represent Nunataks[^2] as _holes_.
 Exposed ice within areas of debris cover and proglacial lakes, and
@@ -124,9 +139,9 @@ fragments can be mapped as separate Polygons.  If fragments are mapped
 as separate Polygon features, all of the fragments of the same
 glacier must have the same id (see [feature attributes]())[^3].  
 
-Glacier outlines, debris cover, supraglacial lakes and proglacial lake features may be combined in a single shapefile.  If multiple feature types are included in the same shapefile, each feature must have a `category` attribute.  See @attributes.
+Glacier outlines, debris cover, supraglacial lakes and proglacial lake features may be combined in a single shapefile.  If multiple feature types are included in the same shapefile, each feature must have a `category` attribute.  See @sec-attributes.
 
-#### Attributes {#attributes}
+#### Attributes {#sec-attributes}
 
 @tbl-feature-attributes lists the attributes that can be assigned to individual glacier features (outlines, debris cover, etc).   Required attributes are indicated in the "Required" column.  If outlines are mapped from satellite or aerial imagery, attributes marked "Y*" are required.  If outlines are mapped from maps, attributes marked "Y^" are required.
 
@@ -147,7 +162,9 @@ Glacier outlines, debris cover, supraglacial lakes and proglacial lake features 
 
 : Attributes for glacier features {#tbl-feature-attributes .striped}
 
-@tbl-category-values list the valid values for the `category` attribute.  The table also list the accepted geometry types for each feature.  A `category` attribute is only required if multiple glacier features are submitted.
+If the outlines shapefile contains named and unnamed glaciers, the value of `name` for unnamed glaciers should be an empty string, e.g. "".
+
+@tbl-category-values list the valid values for the `category` attribute.  The table also lists the accepted geometry types for each feature.  A `category` attribute is only required if multiple glacier features are submitted.
 
 | `category` value | Description | Feature Types |
 |----------|--------------|---------------------|
@@ -160,6 +177,8 @@ Glacier outlines, debris cover, supraglacial lakes and proglacial lake features 
 
 : Valid values for `category` attribute {#tbl-category-values}
 
+[^1]: Extinct glaciers should be a separate submission.
+
 [^2]: A Nunatak is a mountain, or any exposed ground or bedrock, that projects from and is surrounded by glacier ice.
 
-[^3]: A glacier id can be an arbitrary identifier assigned by an analyst or an identifier assigned as part of a local glacier inventory.  GLIMS assigns GLIMS Glacier IDs to glaciers.  However, the GLIMS glacier database stores local identifiers.
+[^3]: A glacier id can be an arbitrary identifier assigned by an analyst or an identifier assigned as part of a local glacier inventory.  GLIMS assigns GLIMS Glacier IDs to glaciers.  However, the GLIMS glacier database also stores local identifiers.
