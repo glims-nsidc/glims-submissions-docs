@@ -174,6 +174,28 @@ Valid values for the `category` attribute are listed below.  The table also list
 | "supra_lake" | Supraglacial Lake outline | Polygon or MultiPolygon with holes |
 | "debris_cov" | Debris covered glacier ice | Polygon or MultiPolygon with holes |
 
+#### Source Data
+
+_Source Data_ used to map glacier outlines can be satellite images, aerial images, digital elevation model, map sheets or field survey data.  GLIMS requires information to identify this source data.
+
+##### Satellite Imagery
+
+For satellite imagery, we require the name of the satellite instrument, the original id assigned by the satellite data provider, and the timestamp for acquisition of this imagery.  The timestamp should be provided in ISO 8640 format (e.g. YYYY-MM-DD or YYYY-MM-DD HH:mm:ss).
+
+##### Aerial Images
+
+For aerial photographs or orthoimages, we require the _Source_, the _Title_ (if one exists), the _Scale_, a _line/roll number_ or _identification number_, and _timestamp_.
+
+##### DEMs
+
+For DEMs, we require the _Source_, the _Title_, the _Scale_, an _Identification number_ if separate tiles exist, a _Timestamp_ for the topographic survey.
+
+##### Maps
+
+For map sheets, we require the _author_ or _publisher_ of the map, the _title_ of the map, the _edition_ of the map, the _scale_ of the map, the _place of publication_, and the _date of publication_.
+
+If the map is part of a topographic series, we require the _Sheet title_, the _Sheet number_, and the _Series title_.
+
 
 ## Questions
 
