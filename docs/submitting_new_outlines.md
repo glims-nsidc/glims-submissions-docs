@@ -60,7 +60,7 @@ European Alps, Himalaya, High Mountain Asia. For smaller regions,
 please give the state, mountain range or other commonly recognized
 name.
 
-#### _Personel_
+#### _Personnel_
 
 The person making the submission is the _submitter_.  Other people who
 helped map glacier outlines are _analysts_.  We would like the name,
