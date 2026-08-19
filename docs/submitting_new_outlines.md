@@ -47,7 +47,7 @@ For example, "Agassiz, glacier outlines of Switzerland, 1840"
 
 The original GLIMS projects organized the mapping effort through
 Regional Centers.  GLIMS still uses Regional Center IDs.  For your
-submission please use the Regional Cneter ID that covers the outlines
+submission please use the Regional Center ID that covers the outlines
 you are submitting.  A list of Regional Center IDs can be found on the
 [GLIMS Regional
 Centers](https://www.glims.org/maps/nsidc_rc_table_public.html) page.
