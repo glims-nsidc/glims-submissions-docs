@@ -116,7 +116,7 @@ glaciers; and transient snow lines.  Glacier outlines are the only
 
 #### Accepted file formats
 
-Glacier features can be submitted as ESRI Shapefiles or GeoJSON.  Most
+Glacier features can be submitted as ESRI Shapefiles (`.shp`) or GeoJSON (`.geojson`).  Most
 submissions use ESRI Shapefile.
 
 #### Feature Geometry
