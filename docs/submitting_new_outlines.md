@@ -11,7 +11,7 @@ to digitize the outlines, and the methods used for mapping.  The
 database also tracks extinct glaciers[^1].
 
 A basic submission consists or one or more glacier outlines for a
-region, information obout the people who mapped the outlines and the
+region, information about the people who mapped the outlines and the
 imagery used for this mapping.
 
 The information and file formats that are required to submit new outlines to GLIMS are described in the following sections.
@@ -24,7 +24,7 @@ Issue](https://github.com/glims-nsidc/glims-submissions/issues) and
 filling out the `New Submission` form.
 
 1. Navigate to the Issues tab in the glims-submissions GitHub Repo[^2]
-2. Click the blue "New Issue" buttom.  ![new-issue-button](images/new-issue-button.png)
+2. Click the blue "New Issue" button.  ![new-issue-button](images/new-issue-button.png)
 3. Select "New Submission" ![new-submission](images/new-submission-selection.png)
 4. Fill out the form.  See [Submission Metadata](#submission-metadata) for more information.
 5. Upload glacier outlines
@@ -47,7 +47,7 @@ For example, "Agassiz, glacier outlines of Switzerland, 1840"
 
 The original GLIMS projects organized the mapping effort through
 Regional Centers.  GLIMS still uses Regional Center IDs.  For your
-submission please use the Regional Cneter ID that covers the outlines
+submission please use the Regional Center ID that covers the outlines
 you are submitting.  A list of Regional Center IDs can be found on the
 [GLIMS Regional
 Centers](https://www.glims.org/maps/nsidc_rc_table_public.html) page.
@@ -60,7 +60,7 @@ European Alps, Himalaya, High Mountain Asia. For smaller regions,
 please give the state, mountain range or other commonly recognized
 name.
 
-#### _Personel_
+#### _Personnel_
 
 The person making the submission is the _submitter_.  Other people who
 helped map glacier outlines are _analysts_.  We would like the name,
@@ -125,7 +125,7 @@ A glacier outline, debris cover, supraglacial lake or proglacial lake
 can be either a Polygon or MultiPolygon.  Center lines and transient
 snowlines should be LineStrings or MultiLineStrings
 
-Each type of glacier feature is mapped as a seprate vector entity.
+Each type of glacier feature is mapped as a separate vector entity.
 
 Glacier outline features should represent Nunataks[^3] as _holes_.
 Exposed ice within areas of debris cover and proglacial lakes, and
