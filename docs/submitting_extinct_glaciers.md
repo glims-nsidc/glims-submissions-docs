@@ -19,7 +19,7 @@ When GLIMS data are downloaded, extinct glaciers have a value of gone in the gla
 
 First determine if the extinct glacier or glaciers is in the GLIMS Glacier Database.
 
-To determine if a glacier is in the GLIMS Glacier Database, use theGLIMS Glacier Viewer](https://www.glims.org/maps/glims) or the [GLIMS Text Search Interface](https://www.glims.org/maps/gmng).  These tools will also provide the GLIMS glacier ID for the glacier.
+To determine if a glacier is in the GLIMS Glacier Database, use the [GLIMS Glacier Viewer](https://www.glims.org/maps/glims) or the [GLIMS Text Search Interface](https://www.glims.org/maps/textsearch/).  These tools will also provide the GLIMS glacier ID for the glacier.
 
 If you have outlines for glaciers that are not in the database, please submit these using the [new submission form](https://github.com/glims-nsidc/glims-submissions/issues).
 
