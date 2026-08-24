@@ -152,7 +152,7 @@ The attributes that can be assigned to individual glacier features (outlines, de
 | `wgms_id` | N | ID assigned by World Glacier Monitoring Service | string | |
 | `inst_name` | Y* | Recognized name of instrument. | string | "Sentinel-2", "SuperDove" |
 | `orig_id` | Y* | ID for image assigned by image provider | string | "S2B_MSIL2A_20250722T102559_N0511_R108_T32TLR_20250722T143017" |
-| `acq_time` | Y* | Date of image acquisition in ISO 8640 format | string | 2026-08-13 or 2026-08-13 13:15:00 |
+| `acq_time` | Y* | Date of image acquisition in ISO 8601 format | string | 2026-08-13 or 2026-08-13 13:15:00 |
 | `map_name` | Y^ | title or name of map | string | "Zermatt Gornergrat" |
 | `auth_pub` | Y^ | Author or publisher of map | string | "Bundesamt fur Landestopographie" |
 | `pub_date` | Y^ | Date map published | string | "1998" |
@@ -180,7 +180,7 @@ _Source Data_ used to map glacier outlines can be satellite images, aerial image
 
 ##### Satellite Imagery
 
-For satellite imagery, we require the name of the satellite instrument, the original id assigned by the satellite data provider, and the timestamp for acquisition of this imagery.  The timestamp should be provided in ISO 8640 format (e.g. YYYY-MM-DD or YYYY-MM-DD HH:mm:ss).
+For satellite imagery, we require the name of the satellite instrument, the original id assigned by the satellite data provider, and the timestamp for acquisition of this imagery.  The timestamp should be provided in ISO 8601 format (e.g. YYYY-MM-DD or YYYY-MM-DD HH:mm:ss).
 
 ##### Aerial Images
 
