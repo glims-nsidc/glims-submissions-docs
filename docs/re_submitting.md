@@ -10,7 +10,9 @@ Before opening a re-submission, identify the submission that needs to be correct
 
 * The **original submission ID** (the `Submission_Info` ID in the GLIMS database)
 * The **RC ID** or region label associated with the original submission
-* A link to the GitHub issue or documentation from the original submission 
+* A link to the GitHub issue or documentation from the original submission
+
+To find **original submission ID** or **RC ID**  query the [GLIMS submissions API](https://www.glims.org/services/submissions). Each record in the response includes a submission_id and rc_id. You can identify your submission by attributes such as submitter name, institution (chief_affl), region, or submission date (subm_time).
 
 If you are unsure which submission needs correcting, you can search the [GLIMS Glacier Viewer](https://www.glims.org/maps/glims). If the data you want to submit does not correspond to any existing submission, use the [new submission form](https://github.com/glims-nsidc/glims-submissions/issues) instead as this form is only for changes to data that has already been submitted.
 
