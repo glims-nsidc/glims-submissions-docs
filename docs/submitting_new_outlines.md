@@ -23,6 +23,7 @@ the GLIMS Glacier Database create a [New Submission
 Issue](https://github.com/glims-nsidc/glims-submissions/issues) and
 filling out the `New Submission` form.
 
+0. Make sure you are logged into github. If you don't have an account it is free to create one. 
 1. Navigate to the Issues tab in the glims-submissions GitHub Repo[^2]
 2. Click the blue "New Issue" button.  ![new-issue-button](images/new-issue-button.png)
 3. Select "New Submission" ![new-submission](images/new-submission-selection.png)
