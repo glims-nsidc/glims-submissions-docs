@@ -12,7 +12,7 @@ GLIMS (Global Land Ice Measurements from Space).
 
 For anything else, [open an basic issue](https://github.com/glims-nsidc/glims-submissions/issues)
 on GitHub or contact NSIDC User Services at
-[nsidc@nsidc.org](mailto:nsidc@nsidc.org).
+[nsidc@nsidc.org](mailto:nsidc@nsidc.org). NOTE: You do need a GitHub account to submit issues. 
 
 
 ```{toctree}
