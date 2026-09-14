@@ -40,6 +40,7 @@ For each re-submission or correction, you will need the following:
 
 Re-submissions are handled through the GLIMS submissions GitHub repository using an issue form.
 
+0. Make sure you are logged into github. If you don't have an account it is free to create one. 
 1. Navigate to the [glims-submissions repository](https://github.com/glims-nsidc/glims-submissions/issues)
 2. Click **New Issue**. ![new-issue-button](images/new-issue-button.png)
 3. Select the **Glacier Ingest Resubmission/Correction** template. ![re-submission-button](images/re-submission.png)
