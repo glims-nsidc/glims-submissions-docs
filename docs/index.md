@@ -1,4 +1,4 @@
-# Glims Submissions Documentation
+# GLIMS Submissions Documentation
 
 Documentation for submitting glacier data to
 GLIMS (Global Land Ice Measurements from Space).
@@ -10,7 +10,7 @@ GLIMS (Global Land Ice Measurements from Space).
 - **[Extinct glaciers](submitting_extinct_glaciers.md)** — instructions for reporting glaciers that no
   longer exist
 
-For anything else, [open an basic issue](https://github.com/glims-nsidc/glims-submissions/issues)
+For anything else, [open a basic issue](https://github.com/glims-nsidc/glims-submissions/issues)
 on GitHub or contact NSIDC User Services at
 [nsidc@nsidc.org](mailto:nsidc@nsidc.org). NOTE: You do need a GitHub account to submit issues. 
 
